@@ -18,7 +18,10 @@
 html,
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
   background: var(--soft);
   color: var(--ink);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -56,6 +59,7 @@ img {
 .logo-link {
   display: inline-flex;
   align-items: center;
+  flex: 0 0 auto;
 }
 
 .header-nav {
@@ -130,6 +134,7 @@ img {
 .hero-actions {
   display: grid;
   gap: 18px;
+  min-width: 0;
 }
 
 .touch-button,
@@ -373,7 +378,6 @@ img {
 }
 
 @media (max-width: 980px) {
-  .site-header,
   .hero,
   .two-columns,
   .detail-layout {
@@ -413,5 +417,359 @@ img {
 
   .question-block {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  .site-header {
+    position: static;
+    flex-direction: column;
+    gap: 16px;
+    min-height: auto;
+    padding: 16px 20px;
+  }
+
+  .logo-link img {
+    width: 150px;
+    height: auto;
+  }
+
+  .header-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .header-nav a {
+    min-height: 48px;
+    padding: 10px 8px;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .page-shell {
+    width: min(100% - 28px, 680px);
+    padding: 24px 0 48px;
+  }
+
+  .hero {
+    gap: 28px;
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .hero h1,
+  .section-heading h1,
+  .detail-content h1,
+  .result-hero h1 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .hero-copy {
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .touch-button,
+  .answer-button {
+    width: 100%;
+    min-height: 68px;
+    padding: 18px 20px;
+    font-size: 19px;
+    line-height: 1.35;
+  }
+
+  .section-grid {
+    margin-top: 32px;
+    gap: 32px;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 27px;
+  }
+
+  .product-grid,
+  .category-grid,
+  .answer-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .product-card {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .product-card-image {
+    min-height: 180px;
+  }
+
+  .product-card h3,
+  .category-card h3 {
+    font-size: 23px;
+  }
+
+  .product-card p,
+  .category-card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .category-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .category-marker {
+    width: 54px;
+    margin-bottom: 22px;
+  }
+
+  .choice-row {
+    min-height: 76px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .back-link {
+    min-height: 46px;
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+
+  .detail-layout {
+    gap: 20px;
+  }
+
+  .detail-image {
+    min-height: 260px;
+  }
+
+  .detail-content {
+    padding: 26px;
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .detail-block {
+    margin-top: 28px;
+  }
+
+  .detail-block h2 {
+    font-size: 22px;
+  }
+
+  .tag-list,
+  .concern-list {
+    gap: 10px;
+  }
+
+  .tag-list li,
+  .concern-list li {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+
+  .document-button {
+    margin-top: 28px;
+  }
+
+  .diagnosis-flow {
+    gap: 16px;
+  }
+
+  .question-block {
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .question-number {
+    width: 52px;
+    height: 52px;
+    font-size: 23px;
+  }
+
+  .question-block h2 {
+    margin-bottom: 18px;
+    font-size: 23px;
+    line-height: 1.35;
+  }
+
+  .result-hero {
+    margin-bottom: 20px;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .site-header {
+    padding: 14px;
+  }
+
+  .logo-link img {
+    width: 128px;
+  }
+
+  .header-nav {
+    gap: 6px;
+  }
+
+  .header-nav a {
+    min-height: 44px;
+    padding: 9px 6px;
+    font-size: 12px;
+  }
+
+  .page-shell {
+    width: min(100% - 20px, 460px);
+    padding: 18px 0 36px;
+  }
+
+  .hero {
+    padding: 22px;
+    gap: 22px;
+  }
+
+  .hero h1,
+  .section-heading h1,
+  .detail-content h1,
+  .result-hero h1 {
+    font-size: 26px;
+  }
+
+  .hero-copy,
+  .lead,
+  .section-heading p,
+  .result-hero p {
+    line-height: 1.65;
+  }
+
+  .hero-copy {
+    font-size: 17px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+  }
+
+  .touch-button,
+  .answer-button {
+    min-height: 60px;
+    padding: 15px 16px;
+    font-size: 17px;
+  }
+
+  .section-grid {
+    margin-top: 24px;
+    gap: 26px;
+  }
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+
+  .compact-list,
+  .choice-list,
+  .diagnosis-flow {
+    gap: 12px;
+  }
+
+  .product-grid,
+  .category-grid {
+    gap: 12px;
+  }
+
+  .product-card {
+    padding: 14px;
+  }
+
+  .product-card-image {
+    min-height: 150px;
+  }
+
+  .product-card h3,
+  .category-card h3 {
+    font-size: 20px;
+  }
+
+  .category-card {
+    padding: 20px;
+  }
+
+  .choice-row {
+    min-height: 66px;
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .choice-row strong {
+    font-size: 15px;
+  }
+
+  .detail-image {
+    min-height: 210px;
+  }
+
+  .detail-content {
+    padding: 20px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .detail-block {
+    margin-top: 24px;
+  }
+
+  .tag-list li,
+  .concern-list li {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .question-block {
+    padding: 18px;
+  }
+
+  .question-number {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  .question-block h2 {
+    font-size: 20px;
+  }
+
+  .answer-grid {
+    gap: 10px;
+  }
+
+  .result-hero {
+    padding: 22px;
   }
 }
