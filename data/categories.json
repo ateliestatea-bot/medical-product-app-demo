@@ -1,0 +1,20 @@
+[
+  {
+    "id": "skin-repair",
+    "name": "肌再生・創傷ケア",
+    "description": "術後や処置後の肌状態をすこやかに整える製品群です。",
+    "accent": "#6b216d"
+  },
+  {
+    "id": "barrier-care",
+    "name": "保湿・バリアケア",
+    "description": "乾燥や敏感傾向の肌を守り、日常ケアを支えます。",
+    "accent": "#0f8f8a"
+  },
+  {
+    "id": "anti-aging",
+    "name": "エイジングケア",
+    "description": "ハリ不足、くすみ、年齢肌の印象に合わせた提案です。",
+    "accent": "#5068a9"
+  }
+]

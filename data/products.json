@@ -1,0 +1,52 @@
+[
+  {
+    "id": "regen-serum",
+    "name": "リジェン セラム EX",
+    "categoryId": "skin-repair",
+    "image": "/sample-product.png",
+    "description": "施術後のデリケートな肌を考えた集中美容液です。肌をすこやかに整え、なめらかな印象へ導きます。",
+    "features": ["施術後ケアに配慮", "軽い使用感", "敏感な肌状態でも提案しやすい設計"],
+    "concerns": ["赤み", "乾燥", "施術後の不安"],
+    "documentUrl": "https://example.com/documents/regen-serum"
+  },
+  {
+    "id": "hydra-shield",
+    "name": "ハイドラ シールド クリーム",
+    "categoryId": "barrier-care",
+    "image": "/sample-product.png",
+    "description": "うるおいの膜で肌を包み、乾燥しやすい肌のバリア感をサポートするクリームです。",
+    "features": ["高保湿タイプ", "しっとり続く処方", "朝晩のホームケアに対応"],
+    "concerns": ["乾燥", "つっぱり", "敏感肌"],
+    "documentUrl": "https://example.com/documents/hydra-shield"
+  },
+  {
+    "id": "tone-clear",
+    "name": "トーン クリア ローション",
+    "categoryId": "anti-aging",
+    "image": "/sample-product.png",
+    "description": "くすみが気になる肌に、明るく澄んだ印象を与える化粧水です。",
+    "features": ["さらっとなじむ", "毎日の導入ケア", "透明感を重視した提案に適合"],
+    "concerns": ["くすみ", "乾燥", "ハリ不足"],
+    "documentUrl": "https://example.com/documents/tone-clear"
+  },
+  {
+    "id": "firming-mask",
+    "name": "ファーミング リフトマスク",
+    "categoryId": "anti-aging",
+    "image": "/sample-product.png",
+    "description": "特別なケア日に使いやすいシートマスク。うるおいとハリ感を集中的に補います。",
+    "features": ["集中ケア向け", "面で密着するシート", "施術メニュー後の物販提案にも対応"],
+    "concerns": ["ハリ不足", "乾燥", "年齢肌"],
+    "documentUrl": "https://example.com/documents/firming-mask"
+  },
+  {
+    "id": "calm-gel",
+    "name": "カーム リペアジェル",
+    "categoryId": "skin-repair",
+    "image": "/sample-product.png",
+    "description": "熱感や赤みが気になる肌をやさしく包む、みずみずしいジェルタイプのケア製品です。",
+    "features": ["ジェルタイプ", "べたつきにくい", "処置後の説明に使いやすい"],
+    "concerns": ["赤み", "ほてり", "施術後の不安"],
+    "documentUrl": "https://example.com/documents/calm-gel"
+  }
+]
